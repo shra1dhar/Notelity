@@ -6,7 +6,7 @@ export interface NoteContextProp {
   setNotes: React.Dispatch<React.SetStateAction<Notes[]>>;
 }
 
-const NoteContext = React.createContext<NoteContextProp | undefined>(undefined!);
+const NoteContext = React.createContext<NoteContextProp>(undefined!);
 
 export const NoteProvider = NoteContext.Provider;
 export const NoteConsumer = NoteContext.Consumer;

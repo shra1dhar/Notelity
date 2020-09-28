@@ -11,6 +11,9 @@
     height: 100vh;
     color: #ccc;
     font-size: 1.5rem;
-    min-width: 50vw;
+    min-width: 80vw;
+    &:focus {
+      outline-width: 0px;
+    }
   }
 }
