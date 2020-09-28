@@ -1,0 +1,38 @@
+$side-padding: 15px;
+
+.sidebar {
+  width: 20vw;
+  height: 100vh;
+  color: #ccc;
+  background-color: #222;
+  &:focus {
+    outline-width: 0px;
+  }
+  h2 {
+    margin: 10px $side-padding 10px 10px;
+    // margin: 0px;
+  }
+  .options {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px 10px 0px;
+  }
+  .side-items {
+    padding: 5px;
+    transition-duration: 300ms;
+    padding: $side-padding;
+    &.active {
+      background-color: #111;
+    }
+    &:hover {
+      background-color: #454545;
+      // opacity: 0.8;
+    }
+    .icons {
+      float: right;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Note from '../components/pages/note/Note';
+import Home from '../components/pages/home/Home';
 
 function NavigationRoutes() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Note />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );

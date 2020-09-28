@@ -3,7 +3,7 @@ import Routes from './navigation/NavigationRoutes';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Routes />
     </div>
   );
