@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import Note from '../../shared/note/Note';
-import Sidebar from '../../shared/Sidebar/Sidebar';
-import { defaultNote } from './constants';
 import './home.scss';
-import debounce from 'lodash.debounce';
-import { NoteProvider } from './NoteContext';
 import { Notes } from './types';
+import debounce from 'lodash.debounce';
+import Note from '../../shared/note/Note';
+import { defaultNote } from './constants';
+import { NoteProvider } from './NoteContext';
+import Sidebar from '../../shared/Sidebar/Sidebar';
+import React, { useEffect, useState } from 'react';
 import { notelityText } from '../../../global/constants/constants';
 
 const Home = () => {

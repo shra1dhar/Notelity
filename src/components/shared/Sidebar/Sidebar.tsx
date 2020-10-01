@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './sidebar.scss';
+import Button from '../form/Button';
 import React, { useContext } from 'react';
+import ShowMoreText from '../others/ShowMoreText';
+import NoteContext from '../../pages/home/NoteContext';
 import { defaultNote } from '../../pages/home/constants';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import NoteContext from '../../pages/home/NoteContext';
-import Button from '../form/Button';
-import ShowMoreText from '../others/ShowMoreText';
-import './sidebar.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export interface Props {
   activeIdx: number;
   setActiveIdx: (noteIndex: number) => void;
