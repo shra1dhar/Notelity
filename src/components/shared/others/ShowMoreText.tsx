@@ -23,7 +23,11 @@ const ShowMoreText: React.FC<Props> = ({ inpString, trimAt, mode = 'readonly' }:
     return <>{inpString}</>;
   }
 
-  const show = <span onClick={() => truncate(!isTruncated)}>{isTruncated ? 'Show more' : 'Show less'}</span>;
+  function truncation() {
+    truncate(!isTruncated);
+  }
+
+  const show = <span onClick={truncation}>{isTruncated ? 'Show more' : 'Show less'}</span>;
 
   return (
     <>
