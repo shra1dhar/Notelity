@@ -7,6 +7,7 @@ import { defaultNote } from '../../pages/home/constants';
 import { faPencilAlt, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getFormattedTime, localeTimeString } from '../../../global/utils/date';
+import InlineInput from '../form/inline_input/InlineInput';
 
 export interface Props {
   activeIdx: number;
@@ -49,7 +50,8 @@ const Sidebar = ({ activeIdx, setActiveIdx, notes, setNotes }: Props) => {
       <div>
         {notes.map((val, idx) => (
           <div key={val.id} data-index={idx} onClick={selectNote} className={`side-items${getactiveIdx(idx)}`}>
-            {val.heading}
+            <InlineInput onClick={editNote} data-index={idx} text={val.heading} />
+            {/* {val.heading}
             {'      '}
             <FontAwesomeIcon
               onClick={editNote}
@@ -57,7 +59,7 @@ const Sidebar = ({ activeIdx, setActiveIdx, notes, setNotes }: Props) => {
               data-index={idx}
               title="Edit Note"
               icon={faPencilAlt}
-            />
+            /> */}
             <span className="icons">
               <FontAwesomeIcon
                 onClick={deleteNote}
