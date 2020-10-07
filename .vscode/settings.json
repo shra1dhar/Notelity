@@ -1,10 +1,20 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "editor.formatOnSave": true,
-  "json.format.enable": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  }
 }
