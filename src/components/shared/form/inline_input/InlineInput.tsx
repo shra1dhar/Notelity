@@ -20,6 +20,7 @@ const InlineInput: FC<Props> = ({ text, mapKey, className = '', savedText }: Pro
       inputRef.current.focus();
       inputRef.current.setSelectionRange(text.length, text.length);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isEditing]);
 
   function saveTempInput() {
