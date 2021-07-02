@@ -1,0 +1,58 @@
+$side-padding: 15px;
+
+.sidebar {
+  color: #ccc;
+  height: 100vh;
+  background-color: #222;
+  border-right: 1px solid #444;
+
+  &:focus {
+    outline-width: 0px;
+  }
+
+  h2 {
+    margin: 10px $side-padding 10px 10px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px 10px 0px;
+  }
+
+  .side-items {
+    padding: 5px;
+    transition-duration: 300ms;
+    padding: $side-padding;
+    word-break: break-all;
+
+    &.active,
+    &.active:hover {
+      background-color: #111;
+    }
+
+    &:hover {
+      background-color: #454545;
+    }
+
+    .edit {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .delete {
+      float: right;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .created-time {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

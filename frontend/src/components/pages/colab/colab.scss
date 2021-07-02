@@ -1,0 +1,14 @@
+.collaboration {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .colab-workspace,
+  .show-area {
+    width: 40vw;
+    height: 40vh;
+    background-color: antiquewhite;
+  }
+  .show-area {
+    white-space: pre-wrap;
+  }
+}
